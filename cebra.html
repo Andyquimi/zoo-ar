@@ -19,14 +19,13 @@
   <h1>Zoo AR Educativo &mdash; Cebra</h1>
 </header>
 
-<model-viewer 
- src="models/cebra.glb"
- ar
- ar-modes="webxr scene-viewer quick-look"
- camera-controls
- auto-rotate
- shadow-intensity="1"
->
+<model-viewer src="models/cebra.glb"
+  ar
+  ar-modes="scene-viewer webxr"
+  camera-controls
+  auto-rotate
+  shadow-intensity="1"
+  alt="Modelo 3D de Cebra">
   <button slot="ar-button" style="background-color:#1d9e75;color:white;border:none;border-radius:6px;padding:10px 16px;font-size:14px;position:absolute;bottom:16px;right:16px;">
     Ver en AR
   </button>
@@ -39,9 +38,9 @@
 <!-- Widget del chatbot Dialogflow CX. Reemplaza AGENT_ID, TU_PROJECT_ID y LOCATION cuando publiques tu agente. -->
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 <df-messenger
-  location="LOCATION"
-  project-id="TU_PROJECT_ID"
-  agent-id="AGENT_ID"
+  location="us-central1"
+  project-id="zooarbot"
+  agent-id="10bd51b1-9901-4450-9fc6-a6c4fbb6e324"
   language-code="es">
   <df-messenger-chat-bubble chat-title="Guía del Zoo AR"></df-messenger-chat-bubble>
 </df-messenger>
