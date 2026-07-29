@@ -35,15 +35,32 @@
   <strong>Dato curioso:</strong> El cuerno del rinoceronte está hecho de queratina, la misma proteína de nuestras uñas.
 </div>
 
-<!-- Widget del chatbot Dialogflow CX. Reemplaza AGENT_ID, TU_PROJECT_ID y LOCATION cuando publiques tu agente. -->
+<!-- Widget del chatbot Dialogflow CX (código oficial de Google) -->
+<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 <df-messenger
   location="us-central1"
   project-id="zooarbot"
   agent-id="10bd51b1-9901-4450-9fc6-a6c4fbb6e324"
-  language-code="es">
-  <df-messenger-chat-bubble chat-title="Guía del Zoo AR"></df-messenger-chat-bubble>
+  language-code="es"
+  max-query-length="-1">
+  <df-messenger-chat-bubble
+    chat-title="ZooGuideBot">
+  </df-messenger-chat-bubble>
 </df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #f3f6fc;
+    --df-messenger-message-user-background: #d3e3fd;
+    --df-messenger-message-bot-background: #fff;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
 
 <a class="volver" href="index.html">&larr; Volver al menú de animales</a>
 
