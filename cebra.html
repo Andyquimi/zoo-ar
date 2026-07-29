@@ -19,13 +19,14 @@
   <h1>Zoo AR Educativo &mdash; Cebra</h1>
 </header>
 
-<model-viewer src="models/cebra.glb"
-  ar
-  ar-modes="scene-viewer webxr"
-  camera-controls
-  auto-rotate
-  shadow-intensity="1"
-  alt="Modelo 3D de Cebra">
+<model-viewer 
+ src="models/cebra.glb"
+ ar
+ ar-modes="webxr scene-viewer quick-look"
+ camera-controls
+ auto-rotate
+ shadow-intensity="1"
+>
   <button slot="ar-button" style="background-color:#1d9e75;color:white;border:none;border-radius:6px;padding:10px 16px;font-size:14px;position:absolute;bottom:16px;right:16px;">
     Ver en AR
   </button>
